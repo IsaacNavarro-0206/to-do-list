@@ -1,3 +1,3 @@
 export function TodosError() {
-  return <p>Error!</p>;
+  return <p>¡Error!</p>;
 }

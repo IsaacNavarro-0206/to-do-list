@@ -1,3 +1,3 @@
 export function EmptyTodos() {
-  return <p>No hay todos, crea uno</p>;
+  return <p>¡No hay tareas!, crea una</p>;
 }

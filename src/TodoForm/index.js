@@ -14,7 +14,7 @@ export function TodoForm({ setOpenModal }) {
 
   return (
     <form onSubmit={onSubmit}>
-      <label>Escribe tu nuevo TODO</label>
+      <label>Escribe tu nueva tarea</label>
 
       <textarea
         required
