@@ -29,9 +29,9 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-    "homepage": "https://IsaacNavarro-0206.github.io/to-do-list"
+    ]
   },
+  "homepage": "https://IsaacNavarro-0206.github.io/to-do-list",
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
