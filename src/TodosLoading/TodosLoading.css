@@ -1,0 +1,43 @@
+.li-todos-loading {
+  width: 327px;
+  height: 50px;
+  background: #fafafa;
+  margin: 10px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: skeleton 1s linear infinite alternate;
+}
+
+.skeleton-button {
+  animation: skeleton 1.2s linear infinite alternate;
+}
+
+@keyframes skeleton {
+  0% {
+    background-color: #e0e0e0;
+  }
+
+  100% {
+    background-color: #c9c9c9;
+  }
+}
+
+.li-todos-loading div {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.start-circle {
+  width: 35px;
+  height: 35px;
+  left: 5%;
+}
+
+.end-circle {
+  width: 25px;
+  height: 25px;
+  right: 5%;
+  top: -7px;
+}

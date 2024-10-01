@@ -1,0 +1,18 @@
+li {
+  width: 327px;
+  background: #fafafa;
+  box-shadow: 0px 5px 50px 0px #20232926;
+  margin: 10px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li > p {
+  text-align: center;
+}
+
+.text-completed {
+  text-decoration: line-through;
+}

@@ -1,0 +1,19 @@
+input {
+  height: 64px;
+  width: 300px;
+  border: 2px solid #1e1e1f;
+  box-shadow: 0px 5px 50px 0px #20232940;
+  text-align: center;
+}
+
+::placeholder {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #aaaaaa;
+}
+
+input:focus {
+  outline-color: #61dafa;
+}
