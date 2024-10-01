@@ -12,6 +12,7 @@ export function TodoSearch() {
         placeholder="Buscar tarea"
         value={searchValue}
         onChange={(event) => setSearchValue(event.target.value)}
+        className="TodoSearch"
       />
     </>
   );

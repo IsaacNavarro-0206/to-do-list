@@ -34,33 +34,31 @@ export function AppUI() {
         </Modal>
       )}
 
-      <div className="container-todolist">
-        <TodoList>
-          {loading && (
-            <>
-              <TodosLoading />
-              <TodosLoading />
-              <TodosLoading />
-            </>
-          )}
+      <TodoList>
+        {loading && (
+          <>
+            <TodosLoading />
+            <TodosLoading />
+            <TodosLoading />
+          </>
+        )}
 
-          {error && <TodosError />}
+        {error && <TodosError />}
 
-          {!loading && todosSearched.length === 0 && <EmptyTodos />}
+        {!loading && todosSearched.length === 0 && <EmptyTodos />}
 
-          {todosSearched.map((todo) => (
-            <TodoItem
-              onComplete={() => completeTodo(todo.completed, todo.text)}
-              onDelete={() => deleteTodo(todo.text)}
-              text={todo.text}
-              completed={todo.completed}
-              key={todo.text}
-            />
-          ))}
-        </TodoList>
+        {todosSearched.map((todo) => (
+          <TodoItem
+            onComplete={() => completeTodo(todo.completed, todo.text)}
+            onDelete={() => deleteTodo(todo.text)}
+            text={todo.text}
+            completed={todo.completed}
+            key={todo.text}
+          />
+        ))}
+      </TodoList>
 
-        <CreateTodoButton setOpenModal={setOpenModal} />
-      </div>
+      <CreateTodoButton setOpenModal={setOpenModal} />
     </div>
   );
 }
